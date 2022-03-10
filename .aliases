@@ -1,4 +1,23 @@
-### Git
+# Copy and paste the contents of this file into the alias declarations
+# of your shell config (e.g. `~/.zshrc`), or import it directly.
+
+#==================================================================
+# General
+#==================================================================
+
+# Shortcut for adding a private ssh key to the macOS keychain.
+# Example: `ssh:keychain id_rsa`
+# See: https://apple.stackexchange.com/a/250572
+ssh:keychain() {
+  if ["$1" != ""]
+  then
+    ssh-add --apple-use-keychain ~/.ssh/"$1"
+  fi
+}
+
+#==================================================================
+# Git shortcuts
+#==================================================================
 
 alias cdgitroot='cd "$(git rev-parse --show-toplevel)"'
 alias gl='git log --no-merges --pretty="%C(cyan)%h%Creset %C(white)%s %Creset%n        %cn %C(magenta)%cd%Creset" --date=relative -n';
@@ -13,7 +32,3 @@ alias gco='git checkout'
 alias gcom='git checkout main'
 alias gaa='git add .'
 alias gp='git push'
-
-### Laravel
-
-alias sail='bash ./vendor/bin/sail'
