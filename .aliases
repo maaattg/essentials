@@ -1,0 +1,19 @@
+### Git
+
+alias cdgitroot='cd "$(git rev-parse --show-toplevel)"'
+alias gl='git log --no-merges --pretty="%C(cyan)%h%Creset %C(white)%s %Creset%n        %cn %C(magenta)%cd%Creset" --date=relative -n';
+alias grh='git reset HEAD --hard'
+alias gs='git status -uno'
+alias gm='git commit -m'
+alias gma='git commit --amend'
+alias gam='git commit -am'
+alias gca='git commit -a -m'
+alias gf='git fetch '
+alias gco='git checkout'
+alias gcom='git checkout main'
+alias gaa='git add .'
+alias gp='git push'
+
+### Laravel
+
+alias sail='bash ./vendor/bin/sail'
