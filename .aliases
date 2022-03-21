@@ -16,6 +16,12 @@ ssh:keychain() {
 }
 
 #==================================================================
+# General shortcuts
+#==================================================================
+
+alias del='rm -rf'
+
+#==================================================================
 # Git shortcuts
 #==================================================================
 
@@ -32,3 +38,10 @@ alias gco='git checkout'
 alias gcom='git checkout main'
 alias gaa='git add .'
 alias gp='git push'
+
+#==================================================================
+# npm / Yarn shortcuts
+#==================================================================
+
+alias yrm='rm -rf node_modules yarn.lock && yarn install'
+alias nrm='rm -rf node_modules package-lock.json && npm install'
