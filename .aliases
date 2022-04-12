@@ -43,5 +43,5 @@ alias gp='git push'
 # npm / Yarn shortcuts
 #==================================================================
 
-alias yrm='rm -rf node_modules yarn.lock && yarn install'
+alias yrm='rm -rf node_modules package-lock.json yarn.lock && yarn install'
 alias nrm='rm -rf node_modules package-lock.json && npm install'
